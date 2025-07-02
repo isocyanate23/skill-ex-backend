@@ -20,7 +20,9 @@ router.get('/profile', authenticate, (req, res) => {
         personal_description: req.user.personal_description,
         working_professional: req.user.working_professional,
         area_expertise: req.user.area_expertise,
-        work_experience: req.user.work_experience
+        work_experience: req.user.work_experience,
+        friends: req.user.friends,
+        friendRequests: req.user.friendRequests
     });
 });
 
